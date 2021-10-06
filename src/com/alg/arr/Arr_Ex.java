@@ -6,5 +6,6 @@ public class Arr_Ex {
         arr[0] = 10;
         arr[1] = 10;
 
+        System.out.println("arr[0] = " + arr[0]);
     }
 }
