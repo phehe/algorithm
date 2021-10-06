@@ -5,7 +5,7 @@ public class Arr_Ex {
         int[] arr = new int[100];
         arr[0] = 10;
         arr[1] = 10;
-
+        arr[2]  =30;
         System.out.println("arr[0] = " + arr[0]);
         System.out.println("arr[1] = " + arr[1]);
     }
