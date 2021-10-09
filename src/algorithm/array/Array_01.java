@@ -1,4 +1,4 @@
-package algorithm.arr;
+package algorithm.array;
 
 import java.util.Scanner;
 
