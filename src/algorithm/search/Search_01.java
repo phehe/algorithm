@@ -13,22 +13,23 @@ public class Search_01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("요솟수 : ");
         int n = sc.nextInt();
 
         int[] arr = new int[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.println("[arr" + i + "]: ");
+            System.out.print("arr[" + i + "]: ");
             arr[i] = sc.nextInt();
         }
 
-        System.out.println("검색 값 : ");
+        System.out.print("검색 값 : ");
         int key = sc.nextInt();
 
         int idx = search(arr, n, key);
 
         if (idx == -1) {
-            System.out.println("키 값의 요소 없습니다.");
+            System.out.println("키 값의 요소가 없습니다.");
         } else {
             System.out.println(key+"값은 arr["+idx+"]에 있습니다.");
         }
