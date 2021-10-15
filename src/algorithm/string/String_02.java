@@ -3,19 +3,34 @@ package algorithm.string;
 import java.util.Scanner;
 
 class String_02 {
-    public String solution(String str) {
-        String answer = "";
-        for (char x : str.toCharArray()) {
-            if (x >= 97 && x <= 122) answer += (char) (x - 32);
-            else answer += (char) (x + 32);
+    /**
+     * @Author : ha
+     * @ClassName : String_02
+     * @Date : 2021-10-15
+     * @대소문자 변환 -> 대문자는 소문자 / 소문자는 대문자
+     **/
+
+    static void solution(String str) {
+        byte[] bytes = str.getBytes();
+        int temp = 0;
+        for (int i = 0; i < bytes.length; i++) {
+            temp = 0;
+            if (bytes[i] >= 65 && bytes[i] <= 90) {
+                temp += bytes[i] + 32;  // 65 + 32 97 -> A a
+            } else if (bytes[i] >= 97 && bytes[i] <= 122) {
+                temp += bytes[i] - 32;
+            }
+            String string = Character.toString(temp);
+            System.out.print(string);
         }
-        return answer;
     }
 
     public static void main(String[] args) {
-        String_02 st = new String_02();
+
         Scanner sc = new Scanner(System.in);
+
         String str = sc.next();
-        System.out.print(st.solution(str));
+
+        solution(str);
     }
 }

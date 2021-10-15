@@ -1,25 +1,39 @@
 package algorithm.string;
 
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class String_01 {
-    public int solution(String str, char c) {
-        int answer = 0;
-        str = str.toUpperCase();
-        c = Character.toUpperCase(c);
+    /**
+     * @Author : ha
+     * @ClassName : String_01
+     * @Date : 2021-10-15
+     * @문자열 입력 받아서 -> 특정문자가 입력 받은 문자열에 몇개 존재하는가 ?
+     **/
 
-        for (char x : str.toCharArray()) {
-            if (x == c) answer++;
+    static int solution(String strUp, String chUp) {
+        int cnt = 0;
+        for (int i = 0; i < strUp.length(); i++) {
+            if (strUp.charAt(i) == chUp.charAt(0)) {
+                cnt++;
+            }
         }
-        return answer;
+        return cnt;
     }
 
+
     public static void main(String[] args) {
-        String_01 st = new String_01();
+
         Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        char c = sc.next().charAt(0);
-        System.out.print(st.solution(str, c));
+
+        String str = sc.nextLine();
+        String ch = sc.next();
+
+        String strUp = str.toUpperCase();
+        String chUp = ch.toUpperCase();
+
+//        char c = sc.next().charAt(0);
+        System.out.println(solution(strUp, chUp));
     }
 }
