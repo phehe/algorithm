@@ -1,8 +1,7 @@
-package algorithm.array;
+package algorithm.twopointer$slidingwindow;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Array_Two_Pointers_2$ {

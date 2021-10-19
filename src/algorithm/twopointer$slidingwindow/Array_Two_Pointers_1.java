@@ -1,4 +1,4 @@
-package algorithm.array;
+package algorithm.twopointer$slidingwindow;
 
 import java.util.ArrayList;
 import java.util.Scanner;
