@@ -2,13 +2,7 @@ package algorithm.recursive;
 
 import java.util.Scanner;
 
-public class Re_4 {
-    /*
-     *   피보나치 재귀호출
-     *   메모이제이션 - > 동적계획법, 동일 계산 반복 -> 이전 계산 값 메모리에 저장 -> 반복 제거 -> 실행속도 up
-     * */
-
-    /*바보*/
+public class Re_5 {
     public int re(int n) {
         if (n == 1) {
             return 1;
@@ -19,7 +13,6 @@ public class Re_4 {
         }
     }
 
-    /*메모이제이션*/
     static int[] fibo;
 
     public int re2(int n) {
@@ -32,11 +25,7 @@ public class Re_4 {
         }
     }
 
-    /*메모이제이션을 활용*/
     public int re3(int n) {
-        /*  fibo배열에 이미 있으면 우측가지 뻗을 필요 없다.
-        *   배열 초기 값 00000 -> 조건 확인
-        * */
         if (fibo[n] > 0) {
             return fibo[n];
         }
