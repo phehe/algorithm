@@ -1,6 +1,7 @@
 package algorithm.dfs;
 
-public class DFS_3 {
+
+public class DFS_17 {
 
     static int n;
     static int[] arr;
@@ -23,7 +24,7 @@ public class DFS_3 {
     }
 
     public static void main(String[] args) {
-        n = 3;
+        n = 10;
         arr = new int[n + 1];
 
         DFS_17 df = new DFS_17();
