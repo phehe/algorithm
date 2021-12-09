@@ -2,7 +2,7 @@ package algorithm.dfs;
 
 import java.util.Scanner;
 
-class DFS_10 {
+class DFS_10$ {
     static int answer = Integer.MIN_VALUE, n, m;
     boolean flag = false;
 
